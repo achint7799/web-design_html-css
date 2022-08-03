@@ -1,0 +1,124 @@
+body{
+    background-image: url("/images/backcover.svg");
+    background-size: 970px;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 1435px;
+    height: 945px;
+    margin-left: 80px;
+    margin-right: 800px;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav>img{
+    width: 7%;
+    margin-left: 160px;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 18px;
+    font-family:"Roboto";
+    color:#4840a5 ;
+    
+}
+.signin-btn{
+    font-size: 20px;
+    background: linear-gradient(to left, #f1669d ,#9a49f7);
+    color: rgb(255, 253, 249);
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 160px;
+
+}
+/* intro-section */
+
+.intro-section{
+    display: grid;
+   grid-template-columns: 1fr 1.5fr;
+    height: 100%;
+    width: 100%;
+    
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+}
+.left-section h1{
+    display: flex;
+    font-size: 60px;
+    width:60%;
+    color: #4840a5  ;
+    font-family: "Roboto";
+    margin-top: 140px;
+    margin-left: 160px;
+}
+
+.left-section h4{
+    font-size: 15px;
+    color: rgb(73, 66, 66);
+    display: flex;
+    font-family:"Roboto" ;
+    font-weight: 200;
+    flex-direction: row;
+    width: 50%;
+    min-height: 20%;
+    justify-content: space-around;
+    line-height:30px ;
+    margin-left: 160px;
+
+}
+.learn-more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    font-size: 25px;
+    background: linear-gradient(to left, #f1669d ,#9a49f7);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-left: 180px;
+    padding: 10px 20px 10px 20px;
+
+}
+
+.imgs-div{
+    display: flex;
+    overflow: visible;
+    height: 100vh;
+    margin-top: 20px;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.vector-img{
+    width: 10%;
+    display: flex;
+    transform: translate(-90px, 500px);
+}
+
+.vector-dot{
+    width: 1%;
+    display: flex;
+    flex-direction: row; 
+    transform: translate(-120px, 515px);
+}
+.big-pic{
+    display: flex;
+    transform: translate(-180px, -40px);
+}
