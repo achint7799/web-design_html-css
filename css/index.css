@@ -20,7 +20,7 @@ nav{
 }
 nav>img{
     width: 7%;
-    margin-left: 160px;
+    margin-left: 60px;
 }
 .nav-items{
     display: flex;
@@ -33,6 +33,7 @@ nav>img{
     
 }
 .signin-btn{
+    display: flex;
     font-size: 20px;
     background: linear-gradient(to left, #f1669d ,#9a49f7);
     color: rgb(255, 253, 249);
@@ -46,7 +47,7 @@ nav>img{
 
 .intro-section{
     display: grid;
-   grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.5fr;
     height: 100%;
     width: 100%;
     
@@ -99,7 +100,6 @@ nav>img{
 
 .imgs-div{
     display: flex;
-    overflow: visible;
     height: 100vh;
     margin-top: 20px;
     justify-content: left;
@@ -121,4 +121,137 @@ nav>img{
 .big-pic{
     display: flex;
     transform: translate(-180px, -40px);
+}
+
+.footer-nav{
+    display: none;
+}
+
+/* responsive css */
+
+@media screen and (max-width: 700px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+       width: 100%;
+       height: 100%;
+       background-image: url("/images/backcover.svg");
+       background-size: 340px;
+       background-repeat: no-repeat;
+       background-position: top;
+       background-position-x: right;
+
+     
+    }
+
+    .main-div{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    nav img{
+        width: 50px;
+    }
+
+    .nav-items{
+        display: none;
+
+    }
+    .signin-btn{
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+        font-size: 12px;
+      
+    }
+
+    .intro-section{
+        display: flex;
+        flex-direction: row;
+        flex: 2;
+    }
+
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        width: max-content;
+        flex: 1;
+    }
+
+    .left-section h1{
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .left-section h4{
+        margin: 0;
+        font-size: 10px;
+        margin-top: 10px;
+        text-align: start;
+    }
+    .learn-more-btn{
+        margin: auto;
+        font-size: 12px;
+        margin-top: 10px;
+        width: max-content;
+
+    }
+
+    .imgs-div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        flex: 1;
+    }
+
+    .vector-dot{
+        display: flex;
+        width: 10px;
+        transform: translate(-100px,10px);
+    }
+    .vector-img{
+        width: 40px;
+        transform: translate(-110px,0px );
+
+    }
+    .big-pic{
+        width: 230px;
+        margin: 0;
+        transform: translate(0,0);
+
+    }
+
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .foot-nav-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 14px;
+        font-family:"Roboto";
+        color:#4840a5 ;
+        position: absolute;
+        bottom: 20px;
+
+    }
+
+
+    
 }
